@@ -1,0 +1,75 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Task 1",
+      "description": "Description for Task 1",
+      "urgency": "low",
+      "status": "Backlog",
+      "isCollapsed": false,
+      "position": 0
+    },
+    {
+      "id": "2",
+      "title": "Task 2",
+      "description": "Description for Task 2",
+      "urgency": "medium",
+      "status": "In Progress",
+      "isCollapsed": false,
+      "position": 1
+    },
+    {
+      "id": "01ec",
+      "title": "Task 3",
+      "description": "Description for Task 3",
+      "urgency": "",
+      "status": "Done",
+      "isCollapsed": true,
+      "position": 2
+    },
+    {
+      "id": "3b5c",
+      "title": "Task 4",
+      "description": "Description for Task 4",
+      "urgency": "",
+      "status": "Backlog",
+      "isCollapsed": true,
+      "position": 3
+    },
+    {
+      "id": "588f",
+      "title": "",
+      "description": "",
+      "urgency": "",
+      "status": "In Progress",
+      "isCollapsed": false,
+      "position": 5
+    },
+    {
+      "id": "3707",
+      "title": "",
+      "description": "",
+      "urgency": "",
+      "status": "Done",
+      "isCollapsed": false,
+      "position": 4
+    },
+    {
+      "id": "c049",
+      "title": "",
+      "description": "",
+      "urgency": "",
+      "status": "Backlog",
+      "isCollapsed": false,
+      "position": 6
+    },
+    {
+      "id": "f4f3",
+      "title": "",
+      "description": "",
+      "urgency": "",
+      "status": "In Progress",
+      "isCollapsed": false
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+/* General resets and settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main App styles */
+.App {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header styles */
+h1 {
+  margin-bottom: 2rem;
+  color: #132743;
+}
+
+/* Main section styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section styles */
+section.columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 75rem) {
+  section.columns {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Card styles for each task and status line */
+.card {
+  padding: 2em;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+/* Button styles */
+.button {
+  border: 1px solid #132743;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  background-color: #132743;
+  color: #fff;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1b3a57;
+  border-color: #1b3a57;
+}
+
+.button:focus {
+  outline: none;
+  background-color: #1b3a57;
+  border-color: #1b3a57;
+}
+
+/* Specific styles for buttons */
+.button.addTask {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  line-height: 1rem;
+}
+
+.button.moveTask {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+}
+
+/* Styles for delete button */
+.button.delete {
+  background-color: #ff8282;
+  border-color: #ff8282;
+}
+
+.button.delete:hover {
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+
+/* Task box styles */
+.task {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Collapsed task styles */
+.task.collapsedTask {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.task.collapsedTask:hover {
+  background-color: #e0e0e0;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.input:disabled {
+  background-color: #f0f0f0;
+}
+
+.urgencyLabels {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+}
+
+.urgencyLabels label {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.urgencyLabels label.selected {
+  border: 1px solid #333;
+  font-weight: bold;
+}
+
+.urgencyLabels label:hover {
+  background-color: #e0e0e0;
+}
